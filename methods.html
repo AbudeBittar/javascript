@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Methods</title>
+    <script src="/JavaScript/methods.js"></script>
+    <style>
+        #space {
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Methods</h1>
+    <h2>Topics: </h2>
+    <ul>
+        <li>
+            What a method is:
+            <p>- A method is just a funktion that's inside of an object like an attribute.</p>
+        </li>
+        <li>
+            Adding methods to an object.
+            <div>
+                var dog = { <br>
+                <div id="space">
+                    name: "Charky", <br>
+                    sex: "male", <br>
+                    age: 3, <br><br>
+                    speak: function(){ <br>
+                        <div id="space">
+                            console.log("Woof!"); <br>
+                        </div>
+                    }, <br><br>
+                    info: function() {  <br>
+                        <div id="space">
+                            console.log("Dog infos: \n" + <br> 
+                            "name: " + this.name + <br>
+                            "\nSex: " + this.sex + <br>
+                            "\nAge: " + this.age); <br>
+                        </div>
+                    } <br>
+                </div>
+                };<br>
+            </div>
+        </li>
+        <li>
+            Namespacing. (Why we do use methods?)
+            <p>- to use the same method name in different js-objcts</p>
+        </li>
+        <li>The keyword 
+            <strong>
+                <em>this</em>
+            </strong>
+            <p>- to avoid (vermeiden) confusing between the Namespacing methods.</p>
+        </li>
+    </ul>
+</body>
+</html>
